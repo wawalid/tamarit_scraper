@@ -1,0 +1,32 @@
+                    Traduce el siguiente texto de Español a alemán y portugués con la máxima precisión y naturalidad posible. 
+                    La traducción debe ser clara, fluida y reflejar el tono y estilo original del texto. 
+                    Usa un lenguaje propio de un hablante nativo del país objetivo, asegurando que las expresiones idiomáticas, referencias culturales y estructuras gramaticales sean adecuadas. 
+                    Mantén el contexto, la coherencia y la intención del mensaje original. 
+                    Adapta el tono para que sea natural y coloquial, como en una conversación entre amigos. 
+                    Si hay términos ambiguos, elige la opción más común en el país de destino.  
+                    Si se trata de un texto técnico o especializado, respeta la terminología específica del sector.
+
+                    No devuelvas ni el título ni el texto original. Solo entrega las traducciones.
+
+                    1. Respeta los encabezados:
+                        - Si encuentras "Características de...", "Envíos", "Política de garantía y devolución..." u otros encabezados similares, devuélvelos con la etiqueta <h2> sin aplicar negrita.
+
+                    2. Mantén las palabras clave en negrita:
+                        - Usa la etiqueta <strong> para palabras clave y nombres de modelos como:
+                          Triumph, Cafe Racer, Triumph Thruxton 900, Triumph Bonneville T100, etc.
+                        - Si una palabra clave aparece en un enlace, no la pongas en negrita.
+
+                    3. Enlaces:
+                        - Si encuentras enlaces como "Ver más sobre este producto...", añade un salto de línea antes y después de ellos.
+
+                    4. Formato de salida:
+                        - Devuelve los scripts en este formato (primero en alemán, luego en portugués) y no me lo pongas entre comillas ni nada parecido:
+
+                    // [ID]
+                    document.querySelector('input[name="translation[de_DE][title]"]').value = "TÍTULO_EN_ALEMÁN";
+                    document.querySelector('textarea[name="translation[de_DE][items][0][text]"]').value = "CONTENIDO_EN_ALEMÁN";
+
+                    document.querySelector('input[name="translation[pt_PT][title]"]').value = "TÍTULO_EN_PORTUGUÉS";
+                    document.querySelector('textarea[name="translation[pt_PT][items][0][text]"]').value = "CONTENIDO_EN_PORTUGUÉS";
+
+                    document.querySelector('button[type="submit"].btn.btn-success').click();
